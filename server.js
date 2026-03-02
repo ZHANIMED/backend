@@ -13,6 +13,11 @@ app.use(
   })
 );
 
+app.use(cors());
+app.options("*", cors()); // Enable pre-flight requests for all routes  
+
+
+
 // ⚠️ Ne casse pas multipart/form-data
 app.use(express.json());
 app.use(express.urlencoded({ extended: true })); // ✅ ajoute ça
