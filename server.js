@@ -14,7 +14,7 @@ app.use(
 );
 
 app.use(cors());
-app.options("*", cors()); // Enable pre-flight requests for all routes  
+app.options(/.*/, cors()); // Enable pre-flight requests for all routes  
 
 
 
