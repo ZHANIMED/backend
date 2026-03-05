@@ -1,6 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const Food = require("../model/food");
+const Food = require("../Model/Food"); // ✅ à la racine du projet, pas dans un dossier "models"
 const cloudinary = require("../middlewares/cloudinary");
 const upload = require("../middlewares/multer");
 const isAuth = require("../middlewares/isAuth");
